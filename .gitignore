@@ -1,0 +1,185 @@
+# ─────────────────────────────────────────────
+# 🔐 SECRETS & ENVIRONMENT — NEVER COMMIT THESE
+# ─────────────────────────────────────────────
+.env
+.env.*
+!.env.example          # keep the example template
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# ─────────────────────────────────────────────
+# 🐍 PYTHON
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyo
+
+# Distribution / packaging
+build/
+dist/
+*.egg
+*.egg-info/
+*.eggs/
+MANIFEST
+.installed.cfg
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ─────────────────────────────────────────────
+# 📦 UV / VIRTUALENVS
+# ─────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+.python-version.local
+
+# ─────────────────────────────────────────────
+# 🧪 TESTING & COVERAGE
+# ─────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+pytest.ini.local
+test-results/
+
+# ─────────────────────────────────────────────
+# 🗄️ DATABASE FILES
+# ─────────────────────────────────────────────
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+data/
+dumps/
+*.sql.gz
+
+# ─────────────────────────────────────────────
+# 📋 LOGS & RUNTIME
+# ─────────────────────────────────────────────
+*.log
+*.log.*
+logs/
+*.pid
+*.seed
+*.gz
+
+# ─────────────────────────────────────────────
+# 🐳 DOCKER
+# ─────────────────────────────────────────────
+.docker/
+
+# ─────────────────────────────────────────────
+# 🖥️ macOS
+# ─────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ─────────────────────────────────────────────
+# 🪟 WINDOWS
+# ─────────────────────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ─────────────────────────────────────────────
+# 🐧 LINUX
+# ─────────────────────────────────────────────
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ─────────────────────────────────────────────
+# 🛠️ IDEs & EDITORS
+# ─────────────────────────────────────────────
+
+# VS Code
+.vscode/
+!.vscode/extensions.json   # keep recommended extensions
+
+# JetBrains (PyCharm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+Session.vim
+.netrwhist
+
+# Emacs
+*#
+.#*
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+
+# ─────────────────────────────────────────────
+# ☁️ DEPLOYMENT & CLOUD
+# ─────────────────────────────────────────────
+.render/
+.fly/
+.railway/
+.vercel/
+.netlify/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# ─────────────────────────────────────────────
+# 🧰 MISC TOOLS
+# ─────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+.pyre/
+.pyright/
+.hypothesis/

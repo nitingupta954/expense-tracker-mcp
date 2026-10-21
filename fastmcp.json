@@ -1,0 +1,19 @@
+{
+  "$schema": "https://gofastmcp.com/public/schemas/fastmcp.json/v1.json",
+  "source": {
+    "path": "src/expense_tracker_mcp_server/server.py",
+    "entrypoint": "mcp"
+  },
+  "environment": {
+    "python": ">=3.13",
+    "dependencies": [
+      "fastmcp>=3.4.5",
+      "pydantic>=2.0",
+      "asyncpg>=0.31.0"
+    ]
+  },
+  "deployment": {
+    "transport": "sse",
+    "port": 8000
+  }
+}

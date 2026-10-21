@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: expense-tracker-mcp
+    env: docker
+    region: ohio
+    plan: free
+    # Render will automatically use the Dockerfile in the repository
+    envVars:
+      - key: DATABASE_URL
+        sync: false # You must provide this value securely in the Render Dashboard
